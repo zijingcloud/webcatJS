@@ -1,0 +1,73 @@
+.shadow {
+  padding: 10px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.mask-block {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-group {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+live-pusher {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 90px;
+  height: 160px;
+}
+live-player {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 90px;
+  height: 160px;
+}
+van-button .circle-btn {
+  border-radius: 3em;
+  padding: 2px 0px;
+  width: 45px;
+  border: none;
+}
+van-button .normal-color {
+  background: gray;
+}
+.player-cover-view {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.player-cover-view .png-btn-group {
+  position: relative;
+  left: 10px;
+  height: 300px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.player-cover-view .png-btn-group .png-btn {
+  width: 44px;
+  height: 44px;
+}
+.presentation-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

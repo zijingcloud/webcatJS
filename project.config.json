@@ -1,0 +1,15 @@
+{
+	"description": "A WePY project",
+	"setting": {
+		"urlCheck": true,
+		"es6": false,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"appid": "wx0168dee16e35df8b",
+	"projectname": "zjcloud_webJoin",
+	"miniprogramRoot": "dist/",
+	"condition": {}
+}

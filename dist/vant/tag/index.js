@@ -1,0 +1,12 @@
+'use strict';
+
+Component({
+  externalClasses: ['custom-class'],
+
+  properties: {
+    type: String,
+    mark: Boolean,
+    plain: Boolean
+  }
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LmpzIl0sIm5hbWVzIjpbIkNvbXBvbmVudCIsImV4dGVybmFsQ2xhc3NlcyIsInByb3BlcnRpZXMiLCJ0eXBlIiwiU3RyaW5nIiwibWFyayIsIkJvb2xlYW4iLCJwbGFpbiJdLCJtYXBwaW5ncyI6Ijs7QUFBQUEsVUFBVTtBQUNSQyxtQkFBaUIsQ0FBQyxjQUFELENBRFQ7O0FBR1JDLGNBQVk7QUFDVkMsVUFBTUMsTUFESTtBQUVWQyxVQUFNQyxPQUZJO0FBR1ZDLFdBQU9EO0FBSEc7QUFISixDQUFWIiwiZmlsZSI6ImluZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiQ29tcG9uZW50KHtcbiAgZXh0ZXJuYWxDbGFzc2VzOiBbJ2N1c3RvbS1jbGFzcyddLFxuXG4gIHByb3BlcnRpZXM6IHtcbiAgICB0eXBlOiBTdHJpbmcsXG4gICAgbWFyazogQm9vbGVhbixcbiAgICBwbGFpbjogQm9vbGVhblxuICB9XG59KTtcbiJdfQ==

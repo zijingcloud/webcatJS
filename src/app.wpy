@@ -1,0 +1,66 @@
+<style lang="less">
+@import (less) './styles/font-awesome.css';
+@import (less) './styles/mdi.css';
+@import "./vant/common/index.wxss";
+.container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;/*垂直居中*/
+  justify-content: center;/*水平居中*/
+}
+</style>
+
+<script>
+import wepy from 'wepy'
+// import 'wepy-async-function'
+
+import { setStore } from 'wepy-redux'
+import configStore from './store'
+
+const store = configStore()
+setStore(store)
+
+export default class extends wepy.app {
+  config = {
+    pages: [
+      'pages/index',
+      'pages/conferencing'
+    ],
+    window: {
+      backgroundTextStyle: 'light',
+      navigationBarBackgroundColor: '#fff',
+      navigationBarTitleText: 'WeChat',
+      navigationBarTextStyle: 'black'
+    }
+  }
+
+  globalData = {
+    userInfo: null
+  }
+
+  constructor () {
+    super()
+    this.use('requestfix')
+    this.use('promisify')
+  }
+
+  onLaunch() {
+  }
+
+  getUserInfo(cb) {
+    const that = this
+    if (this.globalData.userInfo) {
+      return this.globalData.userInfo
+    }
+    wepy.getUserInfo().then((res) => {
+      that.globalData.userInfo = res.userInfo
+      cb && cb(res.userInfo)
+    }).catch((err) => {
+      console.log(err)
+    })
+  }
+}
+</script>

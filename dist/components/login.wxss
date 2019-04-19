@@ -1,7 +1,0 @@
-.login-container {
-  width: 80%;
-  text-align: center;
-}
-.login-container .sel-enter-btn {
-  margin-top: 20px;
-}
